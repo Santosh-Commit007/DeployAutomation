@@ -5,7 +5,7 @@
     <classes>
       <class name="com.Deploy.InstalledAppusingApppreset_12">
         <methods>
-          <include name="Shutdown"/>
+          <include name="InstalledAppusingApppreset"/>
         </methods>
       </class> <!-- com.Deploy.InstalledAppusingApppreset_12 -->
     </classes>
