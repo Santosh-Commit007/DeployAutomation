@@ -1,7 +1,7 @@
 package com.Deploy;
 
-public class commonobject {
-	public static void main(String[] args) {
+public class commonobject_2 {
+	public  void comonobject(String[] args) {
 
 	}
 

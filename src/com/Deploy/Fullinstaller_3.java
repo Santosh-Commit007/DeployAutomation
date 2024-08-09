@@ -1,18 +1,18 @@
 package com.Deploy;
 
-import java.time.Duration;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Fullinstaller {
+import org.testng.annotations.Test;
 
-	public static void main(String[] args) throws InterruptedException {
-		commonobject obj = new commonobject();
+public class Fullinstaller_3 {
+@Test
+	public  void main() throws InterruptedException {
+		commonobject_2 obj = new commonobject_2();
 		 WebDriver driver = new ChromeDriver();
 		//WebDriver driver = new FirefoxDriver();
 		driver.manage().window().maximize();

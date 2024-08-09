@@ -8,15 +8,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
 // Make sure after installation wks reports to all deploy pages as expected with correct group and policy.
 
-public class Wksreportstoconsole {
+public class Wksreportstoconsole_4 {
 
 	// public static String window = "WIN-10-64-21H2-";
 		private static String window = "W-11-21H2-ENG";
-
-	public static void main(String[] args) throws InterruptedException {
-		commonobject obj = new commonobject();
+@Test
+	public  void main() throws InterruptedException {
+		commonobject_2 obj = new commonobject_2();
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(obj.loginUrl);
@@ -49,7 +50,15 @@ public class Wksreportstoconsole {
 		WebElement policy2=driver.findElement(By.xpath("//div[@class='dx-scrollable-wrapper']//tr[td//span[text()='"+window+"']]//td["+index+"]"));
         String policyname=policy2.getText();
             System.out.println(policyname);
-
+        WebElement group=driver.findElement(By.xpath("//div[@id='dvPendingUpdateList']//td[@aria-label='Column Group']"));
+        String index1=group.getAttribute("aria-colindex");
+        
+        WebElement group2=driver.findElement(By.xpath("//div[@class='dx-scrollable-wrapper']//tr[td//span[text()='"+window+"']]//td["+index1+"]"));
+        String groupname=group2.getText();
+            System.out.println(groupname);
+        
+            
+            
 		} else {
 			System.out.println("computer not added");
 		}

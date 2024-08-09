@@ -3,12 +3,14 @@ package com.Deploy;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
-public class Applogin {
+public class Applogin_1 {
 
+	@Test (description="Verify signup and login works as expected.")
 	
-	public static void main(String[] args) {
-		commonobject obj = new commonobject();
+	public  void Login() {
+		commonobject_2 obj = new commonobject_2();
 		// Initialize the WebDriver
 				WebDriver driver = new ChromeDriver();
 				driver.get(obj.loginUrl);
