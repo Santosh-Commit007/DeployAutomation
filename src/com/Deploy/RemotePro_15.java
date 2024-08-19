@@ -9,11 +9,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-public class ViewScreen_10 {
+public class RemotePro_15 {
 	private static String window = "W-11-21H2-ENG";
 
-	@Test(description = "Verify ViewScreen wks as expected.")
-	public void ViewScreen() throws InterruptedException {
+	@Test(description = "Verify RemotePro wks as expected.")
+	public void RemotePro() throws InterruptedException {
 		commonobject_2 obj = new commonobject_2();
 		// Initialize the WebDriver
 		WebDriver driver = new ChromeDriver();
@@ -36,16 +36,16 @@ public class ViewScreen_10 {
 		driver.findElement(By.xpath("//button[@id='btnApplicationRemConnect']")).click();
 
 		Thread.sleep(5000);
-		driver.findElement(By.xpath("//a[normalize-space()='View Screen']")).click();
-		String condition1 = "//div/img[@id='imgScreenshot']";
+		driver.findElement(By.xpath("//a[@class='dropdown-item remoteProOption']")).click();
+		String condition1 = "(//div[@id='computerFullScreenVideoView'])[1]";
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes((long) (5))); // Waiting for a maximum of 10
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(condition1)));
 
 		if (driver.findElements(By.xpath(condition1)).size() > 0) {
 			System.out.println("Condition 1 met");
-			System.out.println("Screen visible");
+			System.out.println("Remote session established");
 		} else {
-			System.out.println("Screen not visible");
+			System.out.println("Remote session not established");
 		}
 		// seconds
 		driver.quit();
@@ -53,3 +53,6 @@ public class ViewScreen_10 {
 	}
 
 }
+
+
+

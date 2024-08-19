@@ -1,19 +1,15 @@
 package com.Deploy;
 
-import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-public class ViewScreen_10 {
+public class Remoteconnect_16 {
 	private static String window = "W-11-21H2-ENG";
 
-	@Test(description = "Verify ViewScreen wks as expected.")
-	public void ViewScreen() throws InterruptedException {
+	@Test (description="Verify Remoteconnect wks as expected.")
+	public void Shutdown() throws InterruptedException {
 		commonobject_2 obj = new commonobject_2();
 		// Initialize the WebDriver
 		WebDriver driver = new ChromeDriver();
@@ -34,22 +30,10 @@ public class ViewScreen_10 {
 				.click();
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//button[@id='btnApplicationRemConnect']")).click();
-
+		
 		Thread.sleep(5000);
-		driver.findElement(By.xpath("//a[normalize-space()='View Screen']")).click();
-		String condition1 = "//div/img[@id='imgScreenshot']";
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes((long) (5))); // Waiting for a maximum of 10
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(condition1)));
-
-		if (driver.findElements(By.xpath(condition1)).size() > 0) {
-			System.out.println("Condition 1 met");
-			System.out.println("Screen visible");
-		} else {
-			System.out.println("Screen not visible");
-		}
-		// seconds
-		driver.quit();
-
+		driver.findElement(By.xpath("//a[normalize-space()='RDP']")).click();
+		
+		
 	}
-
 }

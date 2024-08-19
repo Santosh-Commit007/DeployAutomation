@@ -123,10 +123,6 @@ public class Wksreportstoconsole_4 {
 		} else {
 			System.out.println("computer not added");
 		}
-		////div[@id='dvPendingUpdateList']//td[@aria-label='Column Policy']
 		
-		////div[@class='dx-scrollable-wrapper']//tr[td//span[text()='W-11-21H2-ENG']]//td[2]
-		
-	////div[@id='dvPendingUpdateList']//td[@aria-label='Column Policy']
 	}
 }

@@ -3,11 +3,20 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.Deploy.Apppresets_5"/>
-      <class name="com.Deploy.Fullinstaller_3"/>
+      <class name="com.Deploy.TagtoWks_12"/>
+      <class name="com.Deploy.VNC_14"/>
+      <class name="com.Deploy.Remoteconnect_13"/>
+      <class name="com.Deploy.ViewScreen_10"/>
       <class name="com.Deploy.Applogin_1"/>
-      <class name="com.Deploy.Wksreportstoconsole_4"/>
+      <class name="com.Deploy.InstalledAppusingApppreset_12"/>
       <class name="com.Deploy.Cacheinstall_6"/>
+      <class name="com.Deploy.Wksreportstoconsole_4"/>
+      <class name="com.Deploy.RemoveAgent_11"/>
+      <class name="com.Deploy.Apppresets_5"/>
+      <class name="com.Deploy.Cacheuninstall_7"/>
+      <class name="com.Deploy.Restart_Wks_9"/>
+      <class name="com.Deploy.Fullinstaller_3"/>
+      <class name="com.Deploy.Shutdown_Wks_8"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

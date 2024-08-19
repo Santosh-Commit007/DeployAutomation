@@ -5,11 +5,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class InstalledAppusingApppreset_12 {
+public class TagtoWks_12 {
 	private static String window = "W-11-21H2-ENG";
 
-	@Test(description = "Verify InstalledAppusingApppreset.")
-	public void InstalledAppusingApppreset() throws InterruptedException {
+	@Test(description = "Verify Tag to wks as expected.")
+	public void TagtoWks() throws InterruptedException {
 		commonobject_2 obj = new commonobject_2();
 		// Initialize the WebDriver
 		WebDriver driver = new ChromeDriver();
@@ -29,16 +29,13 @@ public class InstalledAppusingApppreset_12 {
 				By.xpath("(//div[@id='dvPendingApplicationsGrid']//table)[4]//tr//td//span[text()='" + window + "']"))
 				.click();
 		Thread.sleep(5000);
-		driver.findElement(By.xpath("//button[normalize-space()='INSTALL APP PRESETS']")).click();
-		Thread.sleep(5000);
-				// driver.findElement(By.xpath("//a[@class='dropdown-item
-		// open-app-presets-popup-link']")).click();
-		driver.findElement(By.xpath("//a[@onclick='openAppPresetPopup();']")).click();
-		driver.findElement(By.xpath("\r\n" + "driver.findElement(By.xpath(\"//input[@id='txtAppPresetName']\"))"))
+		driver.findElement(By.xpath("//div[@class='dx-texteditor-input-container dx-tag-container dx-native-click']"))
 				.sendKeys("Test");
-		driver.findElement(By.xpath("\r\n" + "driver.findElement(By.xpath(\"//input[@id='txtAppPresetName']\"))"))
-				.click();
-		driver.findElement(By.xpath("driver.findElement(By.xpath(\"//button[@id='btnSaveAppPresets']\"))")).click();
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//div[@class='dx-texteditor-input-container dx-tag-container dx-native-click']"))
+				.sendKeys("Test");
+		driver.findElement(By.xpath("//span[normalize-space()='Test']")).click();
+
 		driver.quit();
 	}
 
