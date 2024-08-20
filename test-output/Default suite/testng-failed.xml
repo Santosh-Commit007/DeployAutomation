@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Deploy.Fullinstaller_3">
+      <class name="com.Deploy.RemotePro_15">
         <methods>
-          <include name="main"/>
+          <include name="RemotePro"/>
         </methods>
-      </class> <!-- com.Deploy.Fullinstaller_3 -->
+      </class> <!-- com.Deploy.RemotePro_15 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

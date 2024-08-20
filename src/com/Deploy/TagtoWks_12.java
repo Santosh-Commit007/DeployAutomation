@@ -3,6 +3,7 @@ package com.Deploy;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 public class TagtoWks_12 {
@@ -28,13 +29,20 @@ public class TagtoWks_12 {
 		driver.findElement(
 				By.xpath("(//div[@id='dvPendingApplicationsGrid']//table)[4]//tr//td//span[text()='" + window + "']"))
 				.click();
+		Thread.sleep(7000);
+		String tag="Test";
+		Actions	a=new Actions(driver);
+		
+		
+		
+		a.moveToElement(driver.findElement(By.xpath("//div[@data-dx_placeholder='Type a tag to apply']"))).click().sendKeys(tag).build().perform();
+		//driver.findElement(By.xpath("//div[@data-dx_placeholder='Type a tag to apply']")).click();
+				
 		Thread.sleep(5000);
-		driver.findElement(By.xpath("//div[@class='dx-texteditor-input-container dx-tag-container dx-native-click']"))
-				.sendKeys("Test");
-		Thread.sleep(5000);
-		driver.findElement(By.xpath("//div[@class='dx-texteditor-input-container dx-tag-container dx-native-click']"))
-				.sendKeys("Test");
-		driver.findElement(By.xpath("//span[normalize-space()='Test']")).click();
+		//driver.findElement(By.xpath("//div[@data-dx_placeholder='Type a tag to apply']"))
+			//	.sendKeys("Test");
+		//driver.findElement(By.xpath("//span[normalize-space()='Test']")).click();
+		driver.findElement(By.xpath("//div[text()='"+tag+"']")).click();
 
 		driver.quit();
 	}
