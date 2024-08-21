@@ -29,23 +29,25 @@ public class InstalledAppusingApppreset_13 {
 		driver.findElement(
 				By.xpath("(//div[@id='dvPendingApplicationsGrid']//table)[4]//tr//td//span[text()='" + window + "']"))
 				.click();
-		Thread.sleep(5000);
+		Thread.sleep(7000);
 		Actions a = new Actions(driver);
-		a.moveToElement(driver.findElement(By.xpath("//button[normalize-space()='INSTALL APP PRESETS']"))).click()
-				.build().perform();
-		// driver.findElement(By.xpath("//button[normalize-space()='INSTALL APP
-		// PRESETS']")).click();
+		a.moveToElement(driver.findElement(By.xpath("//button[normalize-space()='INSTALL APP PRESETS']"))).click().build().perform();
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("(//a[text()='Create New +'])[1]")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//input[@id='txtAppPresetName']")).click();
+		String PresetName="Test";
 		Thread.sleep(5000);
-		driver.findElement(By.xpath("//input[@id='txtAppPresetName']")).sendKeys("Test");
+		driver.findElement(By.xpath("//input[@id='txtAppPresetName']")).sendKeys(PresetName);
 		driver.findElement(By.xpath("//label[normalize-space()='Google Chrome']")).click();
 		driver.findElement(By.xpath("//label[normalize-space()='Mozilla Firefox']")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//button[@id='btnSaveAppPresets']")).click();
 		Thread.sleep(5000);
+		a.moveToElement(driver.findElement(By.xpath("//button[normalize-space()='INSTALL APP PRESETS']"))).click().build().perform();
+		driver.findElement(By.xpath("//a[text()='"+PresetName+"']")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.id("btnConfirmCommonYes")).click();
 		driver.quit();
 	}
 }

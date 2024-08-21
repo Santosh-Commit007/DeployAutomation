@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Deploy.RemotePro_15">
+      <class name="com.Deploy.customscript_16">
         <methods>
-          <include name="RemotePro"/>
+          <include name="customscript"/>
         </methods>
-      </class> <!-- com.Deploy.RemotePro_15 -->
+      </class> <!-- com.Deploy.customscript_16 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
