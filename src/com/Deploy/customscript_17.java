@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-public class customscript_16 {
+public class customscript_17 {
 	private static String window = "W-11-21H2-ENG";
 	private String Batch ="Batch";
 	private String Power ="Power";
