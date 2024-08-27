@@ -97,8 +97,9 @@ public class customscript_17 {
 				driver.findElement(By.xpath("//tr[td//span[text()='"+window+"']]/td["+VBid+"]")).click();
 				Thread.sleep(5000);
 	
-		driver.findElement(By.xpath("//button[@id='btnRunCustomScript']")).click();//run script
-		driver.findElement(By.xpath("//input[@id='btnConfirmCommonYes']")).click();
-	
+				driver.findElement(By.xpath("//button[@id='btnRunCustomScript']")).click();//run script
+				Thread.sleep(5000);
+				driver.findElement(By.xpath("//input[@id='btnConfirmCommonYes']")).click();
+				driver.quit();
 	}
 }

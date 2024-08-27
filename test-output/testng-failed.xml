@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Deploy.customscript_16">
+      <class name="com.Deploy.AppsupdatedusingUpdatebutton_18">
         <methods>
-          <include name="customscript"/>
+          <include name="Appsupdate"/>
         </methods>
-      </class> <!-- com.Deploy.customscript_16 -->
+      </class> <!-- com.Deploy.AppsupdatedusingUpdatebutton_18 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
