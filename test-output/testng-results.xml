@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-27T11:54:07 IST" name="Default suite" finished-at="2024-08-27T11:55:00 IST" duration-ms="53182">
+  <suite started-at="2024-08-28T10:57:17 IST" name="Default suite" finished-at="2024-08-28T10:57:58 IST" duration-ms="41664">
     <groups>
     </groups>
-    <test started-at="2024-08-27T11:54:07 IST" name="Default test" finished-at="2024-08-27T11:55:00 IST" duration-ms="53182">
+    <test started-at="2024-08-28T10:57:17 IST" name="Default test" finished-at="2024-08-28T10:57:58 IST" duration-ms="41664">
       <class name="com.Deploy.AppsupdatedusingUpdatebutton_18">
-        <test-method signature="Appsupdate()[pri:0, instance:com.Deploy.AppsupdatedusingUpdatebutton_18@50b472aa]" started-at="2024-08-27T11:54:07 IST" name="Appsupdate" description="Verify AppsupdatedusingUpdatebutton on wks as expected." finished-at="2024-08-27T11:55:00 IST" duration-ms="53128" status="PASS">
+        <test-method signature="Appsupdate()[pri:0, instance:com.Deploy.AppsupdatedusingUpdatebutton_18@50b472aa]" started-at="2024-08-28T10:57:17 IST" name="Appsupdate" description="Verify Apps updated using Update button on wks as expected." finished-at="2024-08-28T10:57:58 IST" duration-ms="41617" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Appsupdate -->
