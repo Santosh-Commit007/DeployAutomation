@@ -10,7 +10,7 @@ public class Assigngroup_20 {
 	
 		private static String window = "W-11-21H2-ENG";
 		
-		@Test(description = "Verify Assigngroup_20")
+		@Test(description = "Verify Assigngroup_To Wks")
 		public void Assigngroup() throws InterruptedException {
 			commonobject_2 obj = new commonobject_2();
 			// Initialize the WebDriver

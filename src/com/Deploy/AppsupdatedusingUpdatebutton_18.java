@@ -17,6 +17,7 @@ public class AppsupdatedusingUpdatebutton_18 {
         commonobject_2 obj = new commonobject_2();
         // Initialize the WebDriver
         WebDriver driver = new ChromeDriver();
+        
         driver.get(obj.loginUrl);
         driver.manage().window().maximize();
         driver.findElement(By.xpath("//input[@id='txtLoginEmail']")).sendKeys(obj.username);
@@ -33,7 +34,7 @@ public class AppsupdatedusingUpdatebutton_18 {
         Thread.sleep(5000);
         driver.findElement(By.xpath("//div[@class='col-3']//div[@class='d-inline-block custom-switch checbox-switch switch-primary']//span")).click();
         
-        // Loop through the array of apps
+        // Loop through the array of Apps
         for (String app : apps) {
             // Find the application column
             WebElement application = driver.findElement(By.xpath("(//tr//td[@aria-label='Column " + app + "'])[1]"));
