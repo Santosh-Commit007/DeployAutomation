@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Deploy.Appsupdatedonschedule_21">
+      <class name="com.Deploy.InstalledAppusingApppreset_13">
         <methods>
-          <include name="Assignpolicy"/>
+          <include name="InstalledAppusingApppreset"/>
         </methods>
-      </class> <!-- com.Deploy.Appsupdatedonschedule_21 -->
+      </class> <!-- com.Deploy.InstalledAppusingApppreset_13 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
